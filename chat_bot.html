@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>Chatbot</title>
+    </head>
+    <body>
+        <div id = 'user_input'>
+            <p><input id = 'text' type="text" placeholder="Message"></p>
+            <button id = 'submit' type = 'button' onclick="get_input()">Submit</button>
+            <p><span id = 'display'></span></p>
+        </div>
+
+        <script>
+            function get_input(){
+                var val = document.getElementById('text').value;
+                document.getElementById('display').innerHTML = "You: "+val;
+            }
+        </script>
+    </body>
+</html>
